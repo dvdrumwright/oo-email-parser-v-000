@@ -10,7 +10,7 @@ class EmailParser
   email_array = ["avi@test.com", "arel@test.com"]
   email_array = @emails.split(/[,\s]/)
   email_array = email_array.reject{ |e| e == ""}
-  
+  email_array = email_array.uniq 
    
   end 
   
